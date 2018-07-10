@@ -81,18 +81,23 @@
                             <div class="col-12 col-sm-2 mt-3">
                                 Section
                             </div>
-                            <div class="col-12 col-sm-4 mt-3 borderrad">
-                                <button class="btn bg-success">Non-Smoking</button><button class="btn bg-danger">Smoking</button>
+                            <div class="col-12 col-sm-2 mt-3 btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                </label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-sm-2 mt-3">
+                            <div class="col-12 col-sm-2 mt-4">
                                 Date and Time
                             </div>
-                            <div class="col-12 col-sm-4 mt-3">
+                            <div class="col-12 col-sm-4 mt-4">
                                 <input type="text" class="form-control" id="date" name="date" placeholder="Date">
                             </div>
-                            <div class="col-12 col-sm-4 mt-3">
+                            <div class="col-12 col-sm-4 mt-4">
                                 <input type="text" class="form-control" id="time" name="time" placeholder="Time">
                             </div>
                         </div>
@@ -330,11 +335,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 </body>
 
 </html>
